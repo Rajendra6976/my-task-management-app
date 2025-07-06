@@ -1,0 +1,89 @@
+body {
+  background: linear-gradient(135deg, #f5f5dc 0%, #f9f6f2 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+.container {
+  background: #fffbe6;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 32px 32px 24px 32px;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  text-align: center;
+}
+h1 {
+  color: #b48a3c;
+  margin-bottom: 8px;
+}
+h2 {
+  color: #a67c00;
+  font-size: 1.1em;
+  margin-bottom: 18px;
+  text-align: left;
+}
+form .row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+form input, form select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e6d3b3;
+  border-radius: 7px;
+  font-size: 1em;
+  outline: none;
+  background: #f9f6f2;
+  transition: border 0.2s;
+}
+form input:focus, form select:focus {
+  border: 1.5px solid #b48a3c;
+}
+#create-btn, #addSubtask {
+  background: #b48a3c;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background 0.2s;
+}
+#create-btn:hover, #addSubtask:hover {
+  background: #a67c00;
+}
+#create-btn {
+  margin-top: 18px;
+  font-weight: bold;
+}
+#subtasksList {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.subtask-item {
+  background: #f5f5dc;
+  margin: 3px 0;
+  padding: 6px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remove-subtask {
+  background: none;
+  border: none;
+  color: #a67c00;
+  font-size: 1em;
+  cursor: pointer;
+}
+#output {
+  margin-top: 20px;
+  color: #388e3c;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .container { padding: 16px; }
+  form .row { flex-direction: column; gap: 6px; }
+}
